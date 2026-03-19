@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0e005f;
+}
+
+/*HEADER*/
+.header{
+    text-align: center;
+    padding: 40px, 20px, 20px;
+}
+
+.banner h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.banner p{
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.navbar a:hover{
+    color: #ff0000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.container .card {
+    position: relative;
+    width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 15px rgba(189, 166, 166, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.container .card .box {
+    position:absolute;
+    top:20px;
+    left:20px;
+    right:20px;
+    bottom:20px;
+    background:#08277a;
+    border:1px solid #222;
+    border-radius:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .box{
+    transform: translateY(-50px);
+    background: linear-gradient(45deg, #e9e8eb, #4a00e0);
+    box-shadow: 0 15px 35px rgba(142, 45, 226, 0.4);
+
+}
+
+.container .card .box .content{
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .box .content .icon {
+    font-size: 4em;
+    color: #fafafa;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.container .card:hover .box .container .icon{
+    color:#fff;
+    transform: scale(1.1);
+
+}
+
+.container .card .box .content h2{
+    position: center;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.03);
+    pointer-events: none;
+}
+
+.container .card .box .content h3{
+    font-size: 1.8em;
+    color:#fff;
+    margin-bottom: -5px;
+}
+
+.container .card .box .content p{
+    font-size: 0.9em;
+    font-weight: 300;
+    color:#a0a0a0;
+    line-height: 1.6;
+    transition: 0.5s;
+}
+
+.container .card:hover .box .content p{
+    color:#eee;
+}
+
+.container .card:hover .box .content a{
+    position: center;
+    display:inline-block;
+    padding: 10px 25px;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 30px;
+    color:#4a00e0;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.container .card:hover .box .content a{
+    background: #000000;
+    color:#ffffff;
+    box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4);
+}
